@@ -18,7 +18,7 @@ def rename(path, fyle):
     
     #check czy plik z takom nazwom istnieje juz
     if os.path.isfile(path[:-len(fyle)] + r + ".py"):
-        print("ty ale juz jest taka nazwa: " + random)
+        print("ty ale juz jest taka nazwa: " + r)
         rename(path, fyle)
     os.rename(path, path[:-len(fyle)] + r + ".py")
 
